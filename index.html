@@ -13,78 +13,97 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
   <style>
     :root {
-      --bg-color: #f4f6f8;
-      --text-color: #1a1a1a;
-      --card-bg: #ffffff;
-      --accent: #0077b6;
-      --accent-light: #48cae4;
-      --highlight: #03045e;
+      --bg-color: #ffffff;
+      --text-color: #1d1d1f;
+      --secondary-text: #6e6e73;
+      --card-bg: #f5f5f7;
+      --accent: #0071e3;
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
       font-family: 'Inter', sans-serif;
       background-color: var(--bg-color);
       color: var(--text-color);
-      line-height: 1.6;
+      scroll-behavior: smooth;
     }
     nav {
       position: fixed;
       top: 0;
       width: 100%;
-      background: #ffffffcc;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      background: rgba(255, 255, 255, 0.96);
       display: flex;
       justify-content: center;
       padding: 1rem;
-      z-index: 999;
+      border-bottom: 1px solid #e5e5e5;
+      z-index: 1000;
     }
     nav a {
+      margin: 0 1.2rem;
       color: var(--text-color);
-      margin: 0 1rem;
       text-decoration: none;
-      font-weight: 600;
+      font-weight: 500;
+      font-size: 0.95rem;
     }
     nav a:hover {
       color: var(--accent);
     }
     header {
-      padding: 9rem 1rem 3rem;
+      padding: 10rem 2rem 3rem;
       text-align: center;
-      background: linear-gradient(to right, #caf0f8, #ade8f4);
+      background: #f5f5f7;
     }
-    h1 {
-      font-size: 3rem;
-      color: var(--highlight);
-    }
-    h2 {
-      color: var(--accent);
-      font-size: 2rem;
+    header h1 {
+      font-size: 3.2rem;
+      font-weight: 800;
       margin-bottom: 1rem;
-      border-bottom: 2px solid #ccc;
-      display: inline-block;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: var(--secondary-text);
     }
     section {
-      padding: 4rem 1rem;
-      max-width: 1000px;
-      margin: auto;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+    }
+    h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
     }
     .card {
-      background-color: var(--card-bg);
-      padding: 1.5rem;
+      background: var(--card-bg);
+      border-radius: 20px;
+      padding: 2rem;
       margin-bottom: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .card:hover {
-      transform: scale(1.02);
-      box-shadow: 0 6px 30px rgba(0, 119, 182, 0.2);
+      transform: translateY(-5px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     }
     .card h3 {
-      color: var(--highlight);
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+    .card p, .card ul li {
+      font-size: 0.95rem;
+      color: var(--secondary-text);
+    }
+    ul {
+      padding-left: 1.2rem;
     }
     a {
       color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -99,12 +118,12 @@
 
   <header>
     <h1>Karthik Vakada</h1>
-    <p><em>Data Scientist · AI/ML Enthusiast · Data Visualization Expert</em></p>
+    <p>Data Scientist · AI/ML Enthusiast · Data Visualization Expert</p>
   </header>
 
   <section id="about" data-aos="fade-up">
     <h2>About Me</h2>
-    <p>Hello! I'm <strong>Karthik Vakada</strong>, pursuing my MS in Data Science at the University of Maryland, College Park. I focus on crafting intelligent systems using statistical methods, scalable big data pipelines, and insightful visualizations for real-world impact.</p>
+    <p>Hello! I'm <strong>Karthik Vakada</strong>, pursuing my MS in Data Science at the University of Maryland, College Park. I focus on building intelligent systems using statistical methods, scalable big data infrastructure, and insightful visual storytelling.</p>
   </section>
 
   <section id="experience" data-aos="fade-up">
@@ -113,22 +132,22 @@
       <h3>Cloud Technologies – AI/ML Engineer Intern</h3>
       <p><em>Aug 2023 – Feb 2024</em></p>
       <ul>
-        <li>Built a healthcare chatbot integrating NLP for sentiment detection and analytical scripting.</li>
+        <li>Developed a healthcare chatbot integrating NLP for sentiment analysis and analytics.</li>
       </ul>
     </div>
     <div class="card">
       <h3>Phoenix Global – Front-End Developer Intern</h3>
       <p><em>Jul 2022 – Sep 2022</em></p>
       <ul>
-        <li>Developed REDSTORE e-commerce platform using HTML, CSS, and JavaScript.</li>
+        <li>Built a responsive e-commerce platform with HTML, CSS, and JavaScript.</li>
       </ul>
     </div>
     <div class="card">
       <h3>Innomatics Research Labs – Data Science Intern</h3>
       <p><em>Dec 2023 – Mar 2024</em></p>
       <ul>
-        <li>Automated KPI dashboards in Tableau & PowerBI, reducing manual efforts by 9 hours/week.</li>
-        <li>Implemented a random forest model to enhance customer retention by 12 basis points.</li>
+        <li>Automated KPI dashboards using Tableau & PowerBI; saved 9 hrs/week.</li>
+        <li>Enhanced customer retention with a Random Forest model by 12 basis points.</li>
       </ul>
     </div>
   </section>
@@ -137,15 +156,15 @@
     <h2>Projects</h2>
     <div class="card">
       <h3>Network Intrusion Detection System</h3>
-      <p>Engineered a Spark + Hadoop pipeline achieving 92% accuracy using Random Forest and Gaussian Naive Bayes.</p>
+      <p>Achieved 92% accuracy using Random Forest and Gaussian Naive Bayes over Spark and Hadoop pipelines.</p>
     </div>
     <div class="card">
       <h3>Hotel Accommodation Analysis</h3>
-      <p>Analyzed booking data to optimize satisfaction metrics; employed Python, Tableau, and Power BI.</p>
+      <p>Improved satisfaction tracking by 30% with booking data analysis using Python, Tableau, and Power BI.</p>
     </div>
     <div class="card">
       <h3>Human Activity Monitoring</h3>
-      <p>Performed time-series feature extraction and visualization with FFT and entropy-based graphs.</p>
+      <p>Conducted time-series analysis on wearable data using FFT and entropy-based scatter plots.</p>
     </div>
   </section>
 
