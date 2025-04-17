@@ -10,18 +10,15 @@
   <title>Karthik Vakada | Data Science Portfolio</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
-  <script src="https://cdn.jsdelivr.net/npm/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.2/tsparticles.bundle.min.js"></script>
   <style>
     :root {
-      --bg-color: #0e1015;
-      --card-bg: rgba(26, 29, 36, 0.25);
-      --text-color: #eaeaea;
-      --accent: #00f5d4;
-      --accent2: #80ffdb;
-      --highlight: #72f0ff;
+      --bg-color: #f4f6f8;
+      --text-color: #1a1a1a;
+      --card-bg: #ffffff;
+      --accent: #0077b6;
+      --accent-light: #48cae4;
+      --highlight: #03045e;
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -29,32 +26,69 @@
       background-color: var(--bg-color);
       color: var(--text-color);
       line-height: 1.6;
-      scroll-behavior: smooth;
-      overflow-x: hidden;
     }
-    nav { position: fixed; top: 0; width: 100%; background: rgba(17, 20, 27, 0.9); backdrop-filter: blur(10px); display: flex; justify-content: center; padding: 1rem; z-index: 999; }
-    nav a { color: var(--text-color); margin: 0 1rem; text-decoration: none; font-weight: 600; }
-    nav a:hover { color: var(--accent); }
-    header { padding: 7rem 1rem 3rem; text-align: center; background: linear-gradient(to bottom, #11141b, #0e1015); }
-    h1 { font-size: 3.5rem; color: var(--accent); text-shadow: 0 0 10px var(--accent); }
-    h2 { color: var(--accent2); font-size: 2.2rem; margin-bottom: 1rem; border-bottom: 2px solid #222; display: inline-block; }
-    section { padding: 4rem 1rem; max-width: 1000px; margin: auto; }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #ffffffcc;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      z-index: 999;
+    }
+    nav a {
+      color: var(--text-color);
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: var(--accent);
+    }
+    header {
+      padding: 9rem 1rem 3rem;
+      text-align: center;
+      background: linear-gradient(to right, #caf0f8, #ade8f4);
+    }
+    h1 {
+      font-size: 3rem;
+      color: var(--highlight);
+    }
+    h2 {
+      color: var(--accent);
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #ccc;
+      display: inline-block;
+    }
+    section {
+      padding: 4rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
     .card {
       background-color: var(--card-bg);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(15px);
       padding: 1.5rem;
       margin-bottom: 2rem;
-      border-radius: 15px;
-      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
-      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     }
-    .card:hover { transform: scale(1.03); box-shadow: 0 0 30px var(--accent); }
-    .card h3 { color: var(--highlight); }
+    .card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 6px 30px rgba(0, 119, 182, 0.2);
+    }
+    .card h3 {
+      color: var(--highlight);
+    }
+    a {
+      color: var(--accent);
+    }
   </style>
 </head>
 <body>
-  <div id="tsparticles"></div>
   <nav>
     <a href="#about">About</a>
     <a href="#experience">Experience</a>
@@ -64,68 +98,67 @@
   </nav>
 
   <header>
-    <h1>📊 Karthik Vakada</h1>
-    <p><em>Data Science @ UMD · AI/ML Engineer · Data Visualization Enthusiast</em></p>
-    <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_iwmd6pyr.json" background="transparent" speed="1" style="width: 200px; height: 200px;" loop autoplay></lottie-player>
+    <h1>Karthik Vakada</h1>
+    <p><em>Data Scientist · AI/ML Enthusiast · Data Visualization Expert</em></p>
   </header>
 
   <section id="about" data-aos="fade-up">
-    <h2>📍 About Me</h2>
-    <p>Hello! I'm <strong>Karthik Vakada</strong>, currently pursuing my MS in Data Science at the University of Maryland, College Park. I specialize in statistical analysis, big data systems, and building AI-powered solutions with a strong focus on clean data visualization and impactful business insights.</p>
+    <h2>About Me</h2>
+    <p>Hello! I'm <strong>Karthik Vakada</strong>, pursuing my MS in Data Science at the University of Maryland, College Park. I focus on crafting intelligent systems using statistical methods, scalable big data pipelines, and insightful visualizations for real-world impact.</p>
   </section>
 
   <section id="experience" data-aos="fade-up">
-    <h2>💼 Experience</h2>
+    <h2>Experience</h2>
     <div class="card">
       <h3>Cloud Technologies – AI/ML Engineer Intern</h3>
       <p><em>Aug 2023 – Feb 2024</em></p>
       <ul>
-        <li>Developed a healthcare chatbot using NLP to identify user sentiment trends.</li>
+        <li>Built a healthcare chatbot integrating NLP for sentiment detection and analytical scripting.</li>
       </ul>
     </div>
     <div class="card">
       <h3>Phoenix Global – Front-End Developer Intern</h3>
       <p><em>Jul 2022 – Sep 2022</em></p>
       <ul>
-        <li>Built the REDSTORE e-commerce site using HTML, CSS, and JavaScript for intuitive user experience.</li>
+        <li>Developed REDSTORE e-commerce platform using HTML, CSS, and JavaScript.</li>
       </ul>
     </div>
     <div class="card">
       <h3>Innomatics Research Labs – Data Science Intern</h3>
       <p><em>Dec 2023 – Mar 2024</em></p>
       <ul>
-        <li>Enhanced KPIs via PowerBI/Tableau; automated reports to save 9 hrs/week.</li>
-        <li>Built a random forest model for customer attrition; boosted retention by 12 basis points.</li>
+        <li>Automated KPI dashboards in Tableau & PowerBI, reducing manual efforts by 9 hours/week.</li>
+        <li>Implemented a random forest model to enhance customer retention by 12 basis points.</li>
       </ul>
     </div>
   </section>
 
   <section id="projects" data-aos="fade-up">
-    <h2>🚀 Projects</h2>
+    <h2>Projects</h2>
     <div class="card">
       <h3>Network Intrusion Detection System</h3>
-      <p>Achieved 92% accuracy using Random Forest & Naive Bayes with Spark and Hadoop. (Nov 2022 – Mar 2023)</p>
+      <p>Engineered a Spark + Hadoop pipeline achieving 92% accuracy using Random Forest and Gaussian Naive Bayes.</p>
     </div>
     <div class="card">
       <h3>Hotel Accommodation Analysis</h3>
-      <p>Analyzed data from bookings.com to find 30% increase in satisfaction, using Python, Tableau, Power BI. (Dec 2021)</p>
+      <p>Analyzed booking data to optimize satisfaction metrics; employed Python, Tableau, and Power BI.</p>
     </div>
     <div class="card">
       <h3>Human Activity Monitoring</h3>
-      <p>Time-series analysis on 15-subject dataset with FFT and entropy plots. (Jul 2022)</p>
+      <p>Performed time-series feature extraction and visualization with FFT and entropy-based graphs.</p>
     </div>
   </section>
 
   <section id="skills" data-aos="fade-up">
-    <h2>🧠 Skills</h2>
-    <p><strong>Languages:</strong> C, Python, SQL, R, MATLAB</p>
-    <p><strong>Libraries:</strong> Pandas, Scikit-learn, Matplotlib, Seaborn, Plotly</p>
+    <h2>Skills</h2>
+    <p><strong>Languages:</strong> Python, SQL, R, C, MATLAB</p>
+    <p><strong>Libraries:</strong> Pandas, Scikit-learn, Seaborn, Matplotlib, Plotly</p>
     <p><strong>Tools:</strong> Tableau, PowerBI, Spark, GitHub, Excel</p>
-    <p><strong>Cloud & DB:</strong> Azure, MySQL, Hive, Hadoop</p>
+    <p><strong>Platforms:</strong> Azure, Hadoop, Hive, MySQL</p>
   </section>
 
   <section id="contact" data-aos="fade-up">
-    <h2>🌐 Contact</h2>
+    <h2>Contact</h2>
     <p>Email: <a href="mailto:kvakada.1801@gmail.com">kvakada.1801@gmail.com</a></p>
     <p>LinkedIn: <a href="https://linkedin.com/in/karthik-vakada" target="_blank">linkedin.com/in/karthik-vakada</a></p>
     <p>Phone: +1-937-965-9901</p>
@@ -134,22 +167,6 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
-    tsParticles.load("tsparticles", {
-      fullScreen: { enable: true, zIndex: -1 },
-      particles: {
-        number: { value: 75 },
-        color: { value: "#00f5d4" },
-        shape: { type: "circle" },
-        opacity: { value: 0.5 },
-        size: { value: 3 },
-        move: {
-          enable: true,
-          speed: 1,
-          random: true,
-          outModes: "bounce",
-        }
-      }
-    });
   </script>
 </body>
 </html>
